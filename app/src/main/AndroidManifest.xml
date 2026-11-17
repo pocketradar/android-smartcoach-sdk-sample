@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The SDK declares its Bluetooth and foreground-service permissions itself. This one is
+         the host app's: without it the radar service's notification stays hidden on API 33+. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".SampleApplication"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+
+        <!-- Your Pocket Radar API key. Keep real keys out of source control. -->
+        <meta-data
+            android:name="com.pocketradar.smartcoach.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

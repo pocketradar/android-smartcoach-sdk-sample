@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartCoach Sample</string>
+    <string name="sdk_version">SmartCoach SDK %1$s</string>
+
+    <!-- Permissions -->
+    <string name="permissions_needed">SmartCoach needs Bluetooth permission to find and connect to radars.</string>
+    <string name="permissions_grant">Grant permission</string>
+
+    <!-- Session status -->
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_scanning">Scanning…</string>
+    <string name="status_connecting">Connecting to %1$s…</string>
+    <string name="status_connected">Connected to %1$s</string>
+    <string name="status_measuring">Measuring with %1$s</string>
+    <string name="status_reconnecting">Reconnecting to %1$s…</string>
+    <string name="status_ended_with_error">Session ended</string>
+
+    <!-- Session actions -->
+    <string name="action_scan">Scan</string>
+    <string name="action_scan_auto_connect">Scan and auto-connect</string>
+    <string name="action_stop_scanning">Stop scanning</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_start_measuring">Start measuring</string>
+    <string name="action_stop_measuring">Stop measuring</string>
+    <string name="no_radars_found">No radars yet. Put the radar in pairing mode.</string>
+
+    <!-- Radar info -->
+    <string name="radar_id">ID: %1$s</string>
+    <string name="radar_rssi">RSSI: %1$d</string>
+    <string name="radar_type">Device type: %1$s</string>
+    <string name="radar_mac">MAC address: %1$s</string>
+    <string name="radar_unit">Measurement unit: %1$s</string>
+    <string name="radar_battery">Battery level: %1$s</string>
+    <string name="radar_measurement_state">Measurement state: %1$s</string>
+    <string name="radar_power">Power source: %1$s</string>
+    <string name="radar_model">Model number: %1$s</string>
+    <string name="device_type_sc1">SmartCoach 1</string>
+    <string name="device_type_sc2">SmartCoach 2</string>
+    <string name="unknown">unknown</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Radar settings</string>
+    <string name="settings_units">Units</string>
+    <string name="settings_low">Low: %1$d mph</string>
+    <string name="settings_high">High: %1$d mph</string>
+    <string name="settings_apply_range">Apply speed range</string>
+    <string name="settings_sensitivity">Sensitivity: %1$d/%2$d</string>
+    <string name="settings_apply_sensitivity">Apply sensitivity</string>
+    <string name="settings_sensitivity_sc2">Not supported on SmartCoach 2 (featureNotSupported)</string>
+    <string name="setting_units">Units → %1$s</string>
+    <string name="setting_range">Speed range → %1$s</string>
+    <string name="setting_sensitivity">Sensitivity → %1$s</string>
+    <string name="setting_waiting">%1$s: waiting for radar…</string>
+    <string name="setting_acknowledged">%1$s: acknowledged</string>
+    <string name="setting_failed">%1$s: failed</string>
+
+    <!-- Readings -->
+    <string name="readings_waiting">Waiting for readings…</string>
+    <string name="reading_tilt">tilt %1$s %2$d°</string>
+
+    <!-- Errors -->
+    <string name="error_title">Error</string>
+    <string name="configuration_failed">SmartCoach could not be configured</string>
+    <string name="error_message">%1$s\n(code %2$d)</string>
+    <string name="hint_invalid_entitlements">The SDK could not get or verify this app\'s entitlements. Check the network connection, the API key, and that the key was issued for this app\'s application ID.</string>
+    <string name="hint_feature_not_available">This app\'s API key does not include that feature for this radar model. Contact partners@pocketradar.com to change it.</string>
+    <string name="hint_permission_denied">Grant the Bluetooth permission and try again.</string>
+    <string name="ok">OK</string>
+</resources>

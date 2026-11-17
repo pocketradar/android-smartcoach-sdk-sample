@@ -1,0 +1,48 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.compose)
+}
+
+
+android {
+    namespace 'com.pocketradar.smartcoach.sample'
+    compileSdk libs.versions.project.compileSdk.get().toInteger()
+
+    defaultConfig {
+        applicationId 'com.pocketradar.smartcoach.sample'
+        minSdk libs.versions.project.minSdk.get().toInteger()
+        targetSdk libs.versions.project.targetSdk.get().toInteger()
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
+}
+
+dependencies {
+    // The SmartCoach SDK, from the repository declared in settings.gradle.
+    implementation libs.smartcoach
+
+    implementation libs.androidx.core
+    implementation libs.androidx.activity.compose
+    implementation libs.androidx.lifecycle.viewmodel.compose
+    implementation libs.androidx.lifecycle.runtime.compose
+    implementation libs.compose.ui
+    implementation libs.compose.foundation
+    implementation libs.compose.material3
+    implementation libs.compose.ui.tooling.preview
+    debugImplementation libs.compose.ui.tooling
+}
