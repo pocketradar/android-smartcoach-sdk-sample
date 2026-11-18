@@ -1,5 +1,5 @@
 [versions]
-smartcoach = "0.2.0-beta.1"
+smartcoach = "0.2.0-beta.2"
 
 project-minSdk = "29"
 project-targetSdk = "36"

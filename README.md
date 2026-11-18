@@ -4,7 +4,7 @@ This repository contains a sample app demonstrating how to integrate and use the
 
 > **This SDK is currently in beta.** Please do not publish apps using the beta SDK to Google Play.
 
-This sample uses SDK version **0.2.0-beta.1**.
+This sample uses SDK version **0.2.0-beta.2**.
 
 ## Requirements
 
@@ -76,7 +76,7 @@ application ID your key was issued for. Otherwise the first scan fails with
 ## Documentation
 
 API reference for this SDK version:
-**[pocketradar.github.io/smartcoach-android-sdk/docs/0.2.0-beta.1](https://pocketradar.github.io/smartcoach-android-sdk/docs/0.2.0-beta.1/)**
+**[pocketradar.github.io/smartcoach-android-sdk/docs/0.2.0-beta.2](https://pocketradar.github.io/smartcoach-android-sdk/docs/0.2.0-beta.2/)**
 
 ## SDK Repository
 
